@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { routing } from './app.routing';
+import {  UserService } from './_services/index';
 
 
 
@@ -25,7 +26,9 @@ import { AlertComponent } from './_directives/alert/alert.component';
     FormsModule,
     routing
   ],
-  providers: [],
+  providers: [
+    UserService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
